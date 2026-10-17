@@ -1,0 +1,54 @@
+<section id="sr-product-detail">
+  <div class="srpd-layout">
+    <main class="srpd-main" aria-label="Package information">
+      <img class="srpd-long-image"
+           src="{{text-image-url}}"
+           alt="{{text-image-alt}}"
+           loading="eager"
+           decoding="async">
+    </main>
+
+    <aside class="srpd-aside">
+      <div class="srpd-book-card">
+        <div class="srpd-eyebrow">{{text-area}}</div>
+        <h1 class="srpd-title">{{text-title}}</h1>
+        <p class="srpd-subtitle">{{text-subtitle}}</p>
+
+        <div class="srpd-meta">
+          <div>
+            <span>{{text-price-label}}</span>
+            <strong>{{text-price}}</strong>
+          </div>
+          <div>
+            <span>{{text-duration-label}}</span>
+            <strong>{{text-duration}}</strong>
+          </div>
+        </div>
+
+        <div class="srpd-section">
+          <h2>{{text-included-label}}</h2>
+          <div class="srpd-lines">{{text-included}}</div>
+        </div>
+        <div class="srpd-section">
+          <h2>{{text-excluded-label}}</h2>
+          <div class="srpd-lines">{{text-excluded}}</div>
+        </div>
+
+        <a class="srpd-book" href="{{text-book-link}}"
+           target="_blank" rel="noopener noreferrer">
+          {{text-book-label}} <span aria-hidden="true">→</span>
+        </a>
+        <p class="srpd-note">{{text-note}}</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="srpd-mobile-book">
+    <div class="srpd-mobile-price">
+      <small>{{text-price-label}}</small>
+      <strong>{{text-price}}</strong>
+    </div>
+    <a href="{{text-book-link}}" target="_blank"
+       rel="noopener noreferrer">{{text-book-label}} →</a>
+  </div>
+</section>
