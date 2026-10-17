@@ -1,0 +1,56 @@
+<section id="sr-seongsu-en-v8">
+<div class="sr8-layout"><main class="sr8-main">
+<!-- HERO -->
+<section class="sr8-hero"><img src="{{image-hero}}" alt="Seongsu personal styling"><div class="sr8-hero-fade"></div><div class="sr8-hero-text"><span class="sr8-tag">1:1 PERSONAL STYLING</span><h1>2-Hour Styling<br>(Basic)</h1><p>Explore selected Seongsu brands with your Style Mate and get personalized styling advice.</p></div></section>
+<section class="sr8-benefits">
+<article><span class="sr8-icon">♙</span><h3>1:1 Private Styling</h3><p>Personal experience with a dedicated Style Mate</p></article>
+<article><span class="sr8-icon">◷</span><h3>2 Hours</h3><p>Personal styling tour in Seongsu</p></article>
+<article><span class="sr8-icon">▣</span><h3>Pre-Planned Brands</h3><p>Selected in advance for your style and preferences</p></article>
+<article><span class="sr8-icon">♡</span><h3>Personalized Advice</h3><p>Outfit suggestions and styling tips, just for you</p></article>
+</section>
+<figure class="sr8-wide sr8-space"><img src="{{image-cover}}" alt="Discover Seongsu" loading="lazy"></figure>
+<!-- PAIN POINT -->
+<section class="sr8-pain sr8-space"><h2>Want to Dress Korean,<br><em>But Don't Know Where to Start?</em></h2>
+<div class="sr8-questions"><article><span>01 / THE BRANDS</span><p>Don't know <strong>which Korean brands to shop?</strong></p></article>
+<article><span>02 / THE STYLING</span><p>Know the brands, <strong>but not sure how to style them?</strong></p></article>
+<article><span>03 / THE CONFIDENCE</span><p>Want to try a Korean look, <strong>but need some help?</strong></p></article></div>
+<figure class="sr8-circle"><img src="{{image-circle}}" alt="Your Korean Style Mate" loading="lazy"></figure>
+<div class="sr8-pain-end"><p>You don't have to figure it out alone.</p><h3>Meet Your Korean <em>Style Mate.</em></h3></div></section>
+<figure class="sr8-wide sr8-space"><img src="{{image-tour}}" alt="K-Fashion Tour" loading="lazy"></figure>
+<!-- WHY SEONGSU -->
+<section class="sr8-why sr8-space"><header class="sr8-heading"><span>Discover Seongsu</span><h2>Why Seongsu?</h2></header>
+<article class="sr8-point"><b>POINT 01</b><h3>WHERE KOREAN FASHION<br>TRENDS BEGIN</h3><p>Seongsu Is Where Korea's Latest Fashion Trends Come To Life. From Emerging Local Labels To Trendsetting Brands, Discover The Styles Shaping Seoul's Fashion Scene.</p></article>
+<figure class="sr8-wide"><img src="{{image-point}}" alt="Seongsu fashion" loading="lazy"></figure>
+<article class="sr8-point"><b>POINT 02</b><h3>DISCOVER KOREAN BRANDS<br>IN ONE NEIGHBORHOOD</h3><p>From Contemporary Korean Labels To Emerging Designer Brands, Seongsu Brings Together A Diverse Mix Of Korean Fashion. Explore Unique Styles, Discover New Favorites, And Find Pieces Worth Adding To Your Wardrobe.</p></article>
+<figure class="sr8-wide"><img src="{{image-map}}" alt="Seongsu fashion map" loading="lazy"></figure></section>
+<!-- NINE ONE-COLUMN LOOKS -->
+<section class="sr8-looks sr8-space"><header class="sr8-heading"><span>Same You. New Looks.</span><h2>SAME YOU.<br>NEW LOOKS.</h2></header><div class="sr8-look-list"><figure><img src="{{image-look1}}" alt="Look 1" loading="lazy"></figure><figure><img src="{{image-look2}}" alt="Look 2" loading="lazy"></figure><figure><img src="{{image-look3}}" alt="Look 3" loading="lazy"></figure><figure><img src="{{image-look4}}" alt="Look 4" loading="lazy"></figure><figure><img src="{{image-look5}}" alt="Look 5" loading="lazy"></figure><figure><img src="{{image-look6}}" alt="Look 6" loading="lazy"></figure><figure><img src="{{image-look7}}" alt="Look 7" loading="lazy"></figure><figure><img src="{{image-look8}}" alt="Look 8" loading="lazy"></figure><figure><img src="{{image-look9}}" alt="Look 9" loading="lazy"></figure></div></section>
+<!-- TWO-ROW REVIEWS -->
+<section class="sr8-reviews sr8-space"><header class="sr8-heading"><span>Style Runner Stories</span><h2>Real Guests.<br>Real Experiences.</h2><p>Guest feedback, presented as edited excerpts.</p></header>
+<div class="sr8-review-toolbar"><span>GUEST STORIES · 01–09</span><div><button class="sr8-prev" type="button" aria-label="Previous reviews">←</button><button class="sr8-next" type="button" aria-label="Next reviews">→</button></div></div>
+<div class="sr8-review-viewport" tabindex="0" aria-label="Guest reviews: swipe left or right"><div class="sr8-review-grid"><article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review1}}" alt="Review photo 1" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r1-title}}</h3><div class="sr8-review-body">{{editor-r1-body}}</div><small>{{text-r1-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review2}}" alt="Review photo 2" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r2-title}}</h3><div class="sr8-review-body">{{editor-r2-body}}</div><small>{{text-r2-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review3}}" alt="Review photo 3" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r3-title}}</h3><div class="sr8-review-body">{{editor-r3-body}}</div><small>{{text-r3-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review4}}" alt="Review photo 4" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r4-title}}</h3><div class="sr8-review-body">{{editor-r4-body}}</div><small>{{text-r4-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review5}}" alt="Review photo 5" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r5-title}}</h3><div class="sr8-review-body">{{editor-r5-body}}</div><small>{{text-r5-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review6}}" alt="Review photo 6" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r6-title}}</h3><div class="sr8-review-body">{{editor-r6-body}}</div><small>{{text-r6-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review7}}" alt="Review photo 7" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r7-title}}</h3><div class="sr8-review-body">{{editor-r7-body}}</div><small>{{text-r7-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review8}}" alt="Review photo 8" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r8-title}}</h3><div class="sr8-review-body">{{editor-r8-body}}</div><small>{{text-r8-meta}}</small></div></article>
+<article class="sr8-review"><div class="sr8-review-img"><img src="{{image-review9}}" alt="Review photo 9" loading="lazy"></div><div class="sr8-review-copy"><span class="sr8-stars" aria-label="Five stars">★★★★★</span><h3>{{text-r9-title}}</h3><div class="sr8-review-body">{{editor-r9-body}}</div><small>{{text-r9-meta}}</small></div></article></div></div>
+<div class="sr8-review-footer"><span>Swipe to explore more reviews</span><div class="sr8-progress"><i></i></div></div></section>
+<!-- METRICS -->
+<section class="sr8-stats" aria-label="Style Runner at a glance">
+<div><strong><span data-count="100">100</span>+</strong><small>Guests Styled</small></div>
+<div><strong><span data-count="70">70</span>+</strong><small>Countries Reached</small></div>
+<div><strong><span data-count="4.9" data-decimals="1">4.9</span>★</strong><small>Average Rating</small></div>
+<div><strong>{{text-event}}</strong><small>{{text-event-note}}</small></div></section>
+<!-- LAST CTA -->
+<section class="sr8-final sr8-space"><span>Your Korean Style Journey</span><h2>BOOK NOW</h2><a class="sr8-book" href="{{text-book-link}}" target="_blank" rel="noopener noreferrer">Book Your Experience <b>→</b></a><figure class="sr8-wide"><img src="{{image-bottom}}" alt="Book your styling" loading="lazy"></figure></section>
+</main>
+<!-- DESKTOP STICKY CARD / MOBILE END CARD -->
+<aside class="sr8-aside"><div class="sr8-book-card"><span class="sr8-tag">1:1 PERSONAL STYLING</span><h2>2-Hour Styling<br>(Basic)</h2><div class="sr8-price">{{text-price}} <small>USD</small></div><a class="sr8-book" href="{{text-book-link}}" target="_blank" rel="noopener noreferrer">Book Now <b>→</b></a>
+<div class="sr8-facts"><p>◷ &nbsp; 2 hours</p><p>♙ &nbsp; 1:1 with a dedicated Style Mate</p><p>⌖ &nbsp; Seongsu area</p><p>▣ &nbsp; Select available dates when booking</p></div>
+<div class="sr8-list"><h3>Included</h3><p>✓ &nbsp; 2 hours of personal styling tour</p><p>✓ &nbsp; Visit curated Seongsu brands</p><p>✓ &nbsp; Personalized outfit recommendations</p><p>✓ &nbsp; Styling tips and advice</p></div>
+<div class="sr8-list"><h3>Not Included</h3><p>× &nbsp; Personal color consultation</p><p>× &nbsp; Olive Young visit</p><p>× &nbsp; Transportation fees</p><p>× &nbsp; Any personal purchases</p></div></div></aside></div>
+<div class="sr8-mobile-bar"><div><small>2-Hour Styling (Basic)</small><strong>{{text-price}} <span>USD</span></strong></div><a class="sr8-mobile-cta" href="{{text-book-link}}" target="_blank" rel="noopener noreferrer">Book Now →</a></div>
+</section>
