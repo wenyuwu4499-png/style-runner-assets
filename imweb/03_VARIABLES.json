@@ -1,0 +1,101 @@
+{
+  "01｜Image URL": {
+    "opened": true,
+    "children": {
+      "text-image-url": {
+        "type": "textfield",
+        "label": "公開長圖 URL（https://...jpg/png）"
+      },
+      "text-image-alt": {
+        "type": "textfield",
+        "label": "圖片描述",
+        "default": "Style Runner styling experience"
+      }
+    }
+  },
+  "02｜Product": {
+    "opened": true,
+    "children": {
+      "text-area": {
+        "type": "textfield",
+        "label": "地點 Seongsu / Hannam",
+        "default": "Seongsu"
+      },
+      "text-title": {
+        "type": "textfield",
+        "label": "方案名稱",
+        "default": "2-Hour Personal Styling"
+      },
+      "text-subtitle": {
+        "type": "textfield",
+        "label": "方案短介紹",
+        "default": ""
+      },
+      "text-price-label": {
+        "type": "textfield",
+        "label": "價格標籤",
+        "default": "Price"
+      },
+      "text-price": {
+        "type": "textfield",
+        "label": "價格（各方案自行填入）",
+        "default": ""
+      },
+      "text-duration-label": {
+        "type": "textfield",
+        "label": "時間標籤",
+        "default": "Duration"
+      },
+      "text-duration": {
+        "type": "textfield",
+        "label": "服務時間",
+        "default": "2 hours"
+      }
+    }
+  },
+  "03｜Details": {
+    "opened": false,
+    "children": {
+      "text-included-label": {
+        "type": "textfield",
+        "label": "包含標題",
+        "default": "Included"
+      },
+      "text-included": {
+        "type": "textfield",
+        "label": "包含項目（可換行）",
+        "default": ""
+      },
+      "text-excluded-label": {
+        "type": "textfield",
+        "label": "不包含標題",
+        "default": "Not included"
+      },
+      "text-excluded": {
+        "type": "textfield",
+        "label": "不包含項目（可換行）",
+        "default": ""
+      },
+      "text-note": {
+        "type": "textfield",
+        "label": "按鈕下備註",
+        "default": ""
+      }
+    }
+  },
+  "04｜Bokun": {
+    "opened": false,
+    "children": {
+      "text-book-label": {
+        "type": "textfield",
+        "label": "預約按鈕文字",
+        "default": "Book Now"
+      },
+      "text-book-link": {
+        "type": "textfield",
+        "label": "Bokun 預約連結",
+        "default": ""
+      }
+    }
+  }
+}
