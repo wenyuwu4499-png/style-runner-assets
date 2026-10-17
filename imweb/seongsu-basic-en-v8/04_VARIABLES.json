@@ -182,13 +182,13 @@
       },
       "text-event": {
         "type": "textfield",
-        "label": "活動稱呼(待確認)",
-        "default": "Korea Tourism Event"
+        "label": "韓國活動名稱",
+        "default": "Korea Travel Night 2026"
       },
       "text-event-note": {
         "type": "textfield",
-        "label": "活動備註(待確認)",
-        "default": "Participation details pending"
+        "label": "活動身份",
+        "default": "Selected Participant"
       }
     }
   }
