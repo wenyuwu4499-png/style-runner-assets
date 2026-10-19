@@ -32,7 +32,7 @@ var main=card.querySelector(".sr9-main-image"),preview=card.querySelector(".sr9-
 thumbs.forEach(function(btn,index){
 var img=btn.querySelector("img");if(!img)return;
 var src=img.getAttribute("src")||"";
-if(!src||src.indexOf("{{")>=0||src==="undefined"||src==="null"){btn.classList.add("sr9-empty");return;}
+if(!src||(src.charCodeAt(0)===123&&src.charCodeAt(1)===123)||src==="undefined"||src==="null"){btn.classList.add("sr9-empty");return;}
 img.addEventListener("error",function(){btn.classList.add("sr9-empty");});
 if(index===0)btn.classList.add("active");
 btn.addEventListener("click",function(){main.src=src;thumbs.forEach(function(x){x.classList.remove("active")});btn.classList.add("active");});
