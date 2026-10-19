@@ -1,0 +1,254 @@
+{
+  "01 Hero": {
+    "opened": true,
+    "children": {
+      "image-hero": {
+        "type": "image",
+        "label": "01 Hero 圖片"
+      },
+      "image-cover": {
+        "type": "image",
+        "label": "02 Discover 圖片"
+      },
+      "image-circle": {
+        "type": "image",
+        "label": "03 圓形照片"
+      },
+      "image-tour": {
+        "type": "image",
+        "label": "04 K Fashion Tour"
+      }
+    }
+  },
+  "02 Seongsu": {
+    "opened": false,
+    "children": {
+      "image-point": {
+        "type": "image",
+        "label": "05 Point 1 圖片"
+      },
+      "image-map": {
+        "type": "image",
+        "label": "06 Point 2 圖片"
+      }
+    }
+  },
+  "03 Looks 1-5": {
+    "opened": false,
+    "children": {
+      "image-look1": {
+        "type": "image",
+        "label": "穿搭拼貼圖 1"
+      },
+      "image-look2": {
+        "type": "image",
+        "label": "穿搭拼貼圖 2"
+      },
+      "image-look3": {
+        "type": "image",
+        "label": "穿搭拼貼圖 3"
+      },
+      "image-look4": {
+        "type": "image",
+        "label": "穿搭拼貼圖 4"
+      },
+      "image-look5": {
+        "type": "image",
+        "label": "穿搭拼貼圖 5"
+      }
+    }
+  },
+  "04 Looks 6-9": {
+    "opened": false,
+    "children": {
+      "image-look6": {
+        "type": "image",
+        "label": "穿搭拼貼圖 6"
+      },
+      "image-look7": {
+        "type": "image",
+        "label": "穿搭拼貼圖 7"
+      },
+      "image-look8": {
+        "type": "image",
+        "label": "穿搭拼貼圖 8"
+      },
+      "image-look9": {
+        "type": "image",
+        "label": "穿搭拼貼圖 9"
+      }
+    }
+  },
+  "05 Reviews": {
+    "opened": false,
+    "children": {
+      "item-reviews": {
+        "type": "item",
+        "label": "Review 評價列表",
+        "maxLength": 20,
+        "fields": {
+          "image-photo": {
+            "type": "image",
+            "label": "評價照片"
+          },
+          "text-title": {
+            "type": "textfield",
+            "label": "評論重點標題"
+          },
+          "editor-body": {
+            "type": "text-editor",
+            "label": "評論內文"
+          },
+          "text-meta": {
+            "type": "textfield",
+            "label": "國籍 / 名字 / 來源"
+          },
+          "image-extra1": {
+            "type": "image",
+            "label": "加拍照片 1（選填）"
+          },
+          "image-extra2": {
+            "type": "image",
+            "label": "加拍照片 2（選填）"
+          },
+          "image-extra3": {
+            "type": "image",
+            "label": "加拍照片 3（選填）"
+          },
+          "image-extra4": {
+            "type": "image",
+            "label": "加拍照片 4（選填）"
+          }
+        },
+        "default": [
+          {
+            "image-photo": "",
+            "text-title": "They really went above and beyond.",
+            "editor-body": "I came with no expectations and ended up having a great time. I'm usually very picky and didn't expect to buy anything, but Jisu and Jiwon had excellent styling suggestions. They truly went above and beyond.",
+            "text-meta": "Guest Review · Styling Experience",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "It felt like shopping with a friend.",
+            "editor-body": "My brother and I booked the 2:1 package, and JJ made it such a fun experience. She knew exactly where to shop, offered honest feedback, and helped us find great outfits within our budget. It felt like spending the day with a friend.",
+            "text-meta": "Guest Review · Duo Styling",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "Outfits I would never have picked myself.",
+            "editor-body": "I had an amazing time trying outfits and skincare with Yeonjae. She selected looks based on my personal color analysis, introduced me to styles I wouldn't normally choose, and gave honest advice while keeping everything affordable.",
+            "text-meta": "Guest Review · Personal Styling",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "Every single try-on was a success.",
+            "editor-body": "Luna understood my personal style and tailored the experience to my needs. She chose outfits and accessories that genuinely suited me, including pieces I wouldn't usually try. I loved every fitting and would happily return for another season.",
+            "text-meta": "Guest Review · Complete Package",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "I stepped outside my comfort zone.",
+            "editor-body": "JJ took me to several shops and put together complete outfits while still letting me explore on my own. She encouraged me to try pieces outside my usual style, offered honest feedback without pressure, and helped me discover so many looks I loved.",
+            "text-meta": "Guest Review · Seongsu",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "So much more than just shopping.",
+            "editor-body": "At 190 cm tall, I was worried about finding clothes that fit me in Korea. JJ found the right stores, helped me choose flattering outfits, and explained how to mix and match pieces. The whole experience was incredibly helpful and enjoyable.",
+            "text-meta": "Guest Review · Seongsu",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "I discovered a completely new side of myself.",
+            "editor-body": "I tried styles I never thought would suit me and discovered a completely new side of myself. Styling and makeup are things you really have to experience in person. I had such a great time!",
+            "text-meta": "Taiwan · Customer Feedback",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "Everything looked super cute and stylish together.",
+            "editor-body": "Luna was extremely professional. She understood my preferred style and selected clothes and accessories that matched my taste. She also added subtle styling details I wouldn't normally notice, making every look feel special.",
+            "text-meta": "Australia · Klook",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          },
+          {
+            "image-photo": "",
+            "text-title": "She understood exactly what I wanted.",
+            "editor-body": "Shopping with my stylist was such a fun experience. She understood exactly what I wanted, communication was easy, and I discovered clothes and skirts I wouldn't have bought before.",
+            "text-meta": "Hong Kong · Instagram",
+            "image-extra1": "",
+            "image-extra2": "",
+            "image-extra3": "",
+            "image-extra4": ""
+          }
+        ]
+      }
+    }
+  },
+  "10 Book": {
+    "opened": false,
+    "children": {
+      "image-bottom": {
+        "type": "image",
+        "label": "底部 CTA 圖片"
+      },
+      "text-book-link": {
+        "type": "textfield",
+        "label": "Bokun 預約連結",
+        "default": "https://widgets.bokun.io/online-sales/589c806d-fca2-4d39-aee2-a284966ad5e1/experience/1321544"
+      },
+      "text-price": {
+        "type": "textfield",
+        "label": "價格 USD",
+        "default": "$69.00"
+      }
+    }
+  },
+  "11 Team & KTO": {
+    "opened": true,
+    "children": {
+      "image-team-logo": {
+        "type": "image",
+        "label": "Style Runner 品牌 LOGO"
+      },
+      "image-team-backstage": {
+        "type": "image",
+        "label": "團隊幕後造型照片"
+      },
+      "image-kto-event": {
+        "type": "image",
+        "label": "2026 Korea Travel Night 入選／參展照片"
+      }
+    }
+  }
+}
