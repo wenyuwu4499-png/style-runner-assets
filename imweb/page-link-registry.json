@@ -151,22 +151,22 @@
         "en": {
           "identifier": null,
           "url": null,
-          "widget_source": "imweb/seongsu-duo-1to2-olive-young-en-v1/"
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-en-v2/"
         },
         "ja": {
           "identifier": null,
           "url": null,
-          "widget_source": "imweb/seongsu-duo-1to2-olive-young-jp-v1/"
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-jp-v2/"
         },
         "zh-TW": {
           "identifier": null,
           "url": null,
-          "widget_source": "imweb/seongsu-duo-1to2-olive-young-zh-tw-v1/"
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-zh-tw-v2/"
         },
         "ko": {
           "identifier": null,
           "url": null,
-          "widget_source": "imweb/seongsu-duo-1to2-olive-young-ko-v1/"
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-ko-v2/"
         }
       }
     }
