@@ -1,0 +1,32 @@
+{
+  "project": "Style Runner 韓國穿搭陪跑",
+  "purpose": "多語言方案頁連結對照，最後用於總選購頁",
+  "packages": [
+    {
+      "key": "seongsu-1-to-1-basic-2h",
+      "title": "Seongsu 1:1 Personal Styling — 2-Hour Basic",
+      "variants": {
+        "en": {
+          "identifier": "ENSeongsu11-2H",
+          "url": null,
+          "widget_source": "imweb/seongsu-basic-en-v21/"
+        },
+        "ja": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-basic-jp-v1/"
+        },
+        "zh-TW": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "ko": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        }
+      }
+    }
+  ]
+}
