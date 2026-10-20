@@ -1,0 +1,18 @@
+(function(){
+  var observer;
+  function place(){
+    var source=document.getElementById("sr-extra-looks-v1");
+    var target=document.querySelector("#sr18 .s-look-list");
+    if(!source||!target)return false;
+    var pictures=source.querySelectorAll(".sr-extra-look");
+    if(!pictures.length)return true;
+    Array.prototype.forEach.call(pictures,function(figure){target.appendChild(figure);});
+    source.style.display="none";
+    return true;
+  }
+  if(place())return;
+  if(!document.documentElement)return;
+  observer=new MutationObserver(function(){if(place())observer.disconnect();});
+  observer.observe(document.documentElement,{childList:true,subtree:true});
+  document.addEventListener("DOMContentLoaded",function(){if(place()&&observer)observer.disconnect();},{once:true});
+})();
