@@ -140,6 +140,35 @@
           "widget_source": "imweb/seongsu-duo-1to2-basic-ko-v1/"
         }
       }
+    },
+    {
+      "key": "seongsu-1-to-2-duo-styling-olive-young-3-5h",
+      "title": "Seongsu 1:2 Duo Styling + Olive Young — 3.5 Hours",
+      "price_usd": 143,
+      "party_size": 2,
+      "experience_id": "1322845",
+      "variants": {
+        "en": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-en-v1/"
+        },
+        "ja": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-jp-v1/"
+        },
+        "zh-TW": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-zh-tw-v1/"
+        },
+        "ko": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-duo-1to2-olive-young-ko-v1/"
+        }
+      }
     }
   ]
 }
