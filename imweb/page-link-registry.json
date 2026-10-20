@@ -111,6 +111,35 @@
           "widget_source": "imweb/seongsu-1to1-full-styling-pc-oy-ko-v1/"
         }
       }
+    },
+    {
+      "key": "seongsu-1-to-2-duo-personal-styling-3h",
+      "title": "Seongsu 1:2 Duo Personal Styling — 3 Hours",
+      "price_usd": 119,
+      "party_size": 2,
+      "experience_id": "1322309",
+      "variants": {
+        "en": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-duo-1to2-basic-en-v1/"
+        },
+        "ja": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "zh-TW": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "ko": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        }
+      }
     }
   ]
 }
