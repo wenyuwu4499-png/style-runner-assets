@@ -83,6 +83,34 @@
           "widget_source": "imweb/seongsu-1to1-personal-color-ko-v1/"
         }
       }
+    },
+    {
+      "key": "seongsu-1-to-1-styling-personal-color-olive-young-3h",
+      "title": "Seongsu 1:1 Styling + Personal Color + Olive Young — 3 Hours",
+      "price_usd": 118,
+      "experience_id": "1322305",
+      "variants": {
+        "en": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-1to1-full-styling-pc-oy-en-v1/"
+        },
+        "ja": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "zh-TW": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "ko": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        }
+      }
     }
   ]
 }
