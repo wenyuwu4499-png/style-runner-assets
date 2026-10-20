@@ -1,0 +1,49 @@
+(function(){var r=document.getElementById("sr18");if(!r)return;var hd=r.querySelector(".V6"),cd=r.querySelector(".V7");if(hd&&!hd.children.length)hd.innerHTML="<span>EXTRA EXPERIENCE · 30 MINUTES</span><h2>DISCOVER K-BEAUTY.<br><em>FIND YOUR FAVORITES.</em></h2><h3>Olive Young Shopping Experience</h3><p>After your duo styling tour, explore Olive Young with your Style Mate. Discover local beauty favorites beyond online trends, get practical makeup and skincare advice, and find products that suit each of you.</p>";if(cd&&!cd.children.length)cd.innerHTML="<article><i>✦</i><h4>REAL LOCAL FAVORITES</h4><p>Explore what locals recommend, beyond online hype and paid trends.</p></article><article><i>♡</i><h4>BEAUTY TIPS FOR BOTH</h4><p>Ask about makeup shades, application tips and everyday skincare.</p></article><article><i>✿</i><h4>MORE THAN MAKEUP</h4><p>Browse haircare, fragrance, skincare and wellness finds on your wishlist.</p></article>";if(!r.querySelector(".V1"))r.insertAdjacentHTML("beforeend","<div class=V1 hidden style=\"position:fixed;inset:0;z-index:200000;display:none;align-items:center;justify-content:center;background:rgba(24,18,17,.93);padding:18px\" role=\"dialog\" aria-modal=\"true\" aria-label=\"Review details\"><div class=s-lightbox-panel style=\"position:relative;width:min(760px,96vw);max-height:88vh;overflow:auto;background:#fff;padding:30px 20px;border-radius:14px\"><button class=s-lightbox-close type=\"button\" aria-label=\"Close\" style=\"position:absolute;right:8px;top:7px;border:0;background:#fff4eb;border-radius:50%;width:36px;height:36px;font-size:24px\">×</button><img class=s-lightbox-photo alt=\"Review photo\" style=\"display:none;max-width:100%;max-height:78vh;object-fit:contain;margin:auto\"><div class=s-lightbox-text style=\"display:none;padding:12px 4px\"><span style=\"color:#f5a126\">★★★★★</span><h3 class=s-lightbox-title style=\"font:700 24px Georgia,serif;margin:10px 0!important\"></h3><p class=s-lightbox-body style=\"font-size:15px;line-height:1.7;color:#70625b\"></p><small class=s-lightbox-meta style=\"color:#ff6428\"></small></div></div></div>");})();
+(function(){var e=document.querySelector("#sr18 .R7 .R8");if(e&&!document.querySelector("#sr18 .T4"))e.insertAdjacentHTML("afterend","<section class=T4 style=\"margin-bottom:24px\" aria-label=\"Style Runner stats\"><div><strong><span data-count=\"100\">100</span>+</strong><small>Guests Styled</small></div><div><strong><span data-count=\"70\">70</span>+</strong><small>Countries Reached</small></div><div><strong><span data-count=\"4.9\" data-decimals=\"1\">4.9</span>★</strong><small>Average Rating</small></div></section>");})();
+(function(){
+var root=document.getElementById("sr18");
+if(!root||root.getAttribute("data-init")==="yes")return;
+root.setAttribute("data-init","yes");
+var view=root.querySelector(".S3"),grid=root.querySelector(".S4"),prev=root.querySelector(".s-prev"),next=root.querySelector(".s-next"),bar=root.querySelector(".T3 i");
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var timer=null,resume=null,paused=false;
+function step(){var el=grid&&grid.querySelector(".S5");if(!el)return 250;return el.getBoundingClientRect().width+(parseFloat(getComputedStyle(grid).columnGap)||0);}
+function progress(){if(!bar||!view)return;var max=Math.max(0,view.scrollWidth-view.clientWidth);bar.style.width=(max?15+85*view.scrollLeft/max:100)+"%";}
+function move(dir){if(!view)return;var max=Math.max(0,view.scrollWidth-view.clientWidth);if(max<4)return;var goal=view.scrollLeft+dir*step();if(goal>max-3)goal=0;if(goal<0)goal=max;view.scrollTo({left:goal,behavior:reduce?"auto":"smooth"});}
+function stop(){if(timer){clearInterval(timer);timer=null;}}
+function start(){stop();if(reduce||paused||document.hidden)return;timer=setInterval(function(){move(1);},5000);}
+function postpone(){stop();clearTimeout(resume);resume=setTimeout(start,9000);}
+if(prev&&next&&view){prev.addEventListener("click",function(){move(-1);postpone();});next.addEventListener("click",function(){move(1);postpone();});view.addEventListener("scroll",progress,{passive:true});view.addEventListener("pointerdown",postpone,{passive:true});view.addEventListener("focusin",function(){paused=true;stop();});view.addEventListener("focusout",function(){paused=false;start();});view.addEventListener("mouseenter",function(){paused=true;stop();});view.addEventListener("mouseleave",function(){paused=false;start();});document.addEventListener("visibilitychange",start);progress();start();}
+var items=root.querySelectorAll("[data-count]"),stats=root.querySelector(".T4");
+function animate(el){if(el.dataset.done)return;el.dataset.done="1";var n=Number(el.dataset.count),d=Number(el.dataset.decimals||0);if(reduce){el.textContent=n.toFixed(d);return;}var st=0;function tick(now){if(!st)st=now;var p=Math.min(1,(now-st)/1300);p=1-Math.pow(1-p,3);el.textContent=(n*p).toFixed(d);if(p<1)requestAnimationFrame(tick);}el.textContent=(0).toFixed(d);requestAnimationFrame(tick);}
+if(stats&&"IntersectionObserver" in window){var obs=new IntersectionObserver(function(e){if(e[0].isIntersecting){items.forEach(animate);obs.disconnect();}},{threshold:.25});obs.observe(stats);}else{items.forEach(animate);}
+})();
+(function(){
+var root=document.getElementById("sr18");if(!root)return;
+var popup=root.querySelector(".V1"),photo=popup.querySelector(".s-lightbox-photo"),panel=popup.querySelector(".s-lightbox-text"),close=popup.querySelector(".s-lightbox-close"),previous=null;
+function open(){previous=document.activeElement;popup.hidden=false;popup.style.display="flex";close.focus();}
+function shut(){popup.style.display="none";popup.hidden=true;photo.style.display="none";panel.style.display="none";photo.removeAttribute("src");if(previous&&previous.focus)previous.focus();}
+close.addEventListener("click",shut);
+popup.addEventListener("click",function(e){if(e.target===popup)shut();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!popup.hidden)shut();});
+root.querySelectorAll(".S5").forEach(function(card){
+var pictures=card.querySelectorAll(".T1"),text=card.querySelector(".S8");
+pictures.forEach(function(button){
+var thumb=button.querySelector("img"),raw=thumb.getAttribute("src")||"";
+if(!raw||(raw.charCodeAt(0)===123&&raw.charCodeAt(1)===123)){button.hidden=true;return;}
+thumb.addEventListener("error",function(){button.hidden=true;});
+button.addEventListener("click",function(){
+panel.style.display="none";photo.style.display="block";
+photo.src=thumb.currentSrc||thumb.src;photo.alt=thumb.alt;open();
+});
+});
+card.querySelector(".S9").addEventListener("click",function(){
+photo.style.display="none";panel.style.display="block";
+panel.querySelector(".s-lightbox-title").textContent=card.querySelector("h3").textContent;
+panel.querySelector(".s-lightbox-body").textContent=text.textContent.trim();
+panel.querySelector(".s-lightbox-meta").textContent=card.querySelector("small").textContent;
+open();
+});
+});
+})();
+(function(){var r=document.querySelector("#sr18 .V7");if(!r||!("IntersectionObserver" in window)||(window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches))return;var o=new IntersectionObserver(function(entries){if(entries[0].isIntersecting){r.querySelectorAll("article").forEach(function(e,i){if(e.animate)e.animate([{opacity:0,transform:"translateY(14px)"},{opacity:1,transform:"translateY(0)"}],{duration:550,delay:110*i,easing:"ease-out"});});o.disconnect();}},{threshold:.1});o.observe(r);})();
