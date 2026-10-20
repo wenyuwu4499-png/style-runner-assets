@@ -12,14 +12,14 @@
           "widget_source": "imweb/seongsu-basic-en-v21/"
         },
         "ja": {
-          "identifier": null,
+          "identifier": "JPSeongsu11-2H",
           "url": null,
           "widget_source": "imweb/seongsu-basic-jp-v1/"
         },
         "zh-TW": {
           "identifier": null,
           "url": null,
-          "widget_source": null
+          "widget_source": "imweb/seongsu-basic-zh-tw-v1/"
         },
         "ko": {
           "identifier": null,
