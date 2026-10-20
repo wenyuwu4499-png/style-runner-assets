@@ -127,17 +127,17 @@
         "ja": {
           "identifier": null,
           "url": null,
-          "widget_source": null
+          "widget_source": "imweb/seongsu-duo-1to2-basic-jp-v1/"
         },
         "zh-TW": {
           "identifier": null,
           "url": null,
-          "widget_source": null
+          "widget_source": "imweb/seongsu-duo-1to2-basic-zh-tw-v1/"
         },
         "ko": {
           "identifier": null,
           "url": null,
-          "widget_source": null
+          "widget_source": "imweb/seongsu-duo-1to2-basic-ko-v1/"
         }
       }
     }
