@@ -27,6 +27,34 @@
           "widget_source": "imweb/seongsu-basic-ko-v1/"
         }
       }
+    },
+    {
+      "key": "seongsu-1-to-1-styling-olive-young-2h30",
+      "title": "Seongsu 1:1 Personal Styling + Olive Young — 2.5 Hours",
+      "price_usd": 99,
+      "experience_id": "1322270",
+      "variants": {
+        "en": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-1to1-oliveyoung-en-v1/"
+        },
+        "ja": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "zh-TW": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "ko": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        }
+      }
     }
   ]
 }
