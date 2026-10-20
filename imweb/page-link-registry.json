@@ -55,6 +55,34 @@
           "widget_source": "imweb/seongsu-1to1-oliveyoung-ko-v1/"
         }
       }
+    },
+    {
+      "key": "seongsu-1-to-1-styling-personal-color-2h30",
+      "title": "Seongsu 1:1 Personal Styling + Quick Personal Color Analysis — 2.5 Hours",
+      "price_usd": 99,
+      "experience_id": "1322303",
+      "variants": {
+        "en": {
+          "identifier": null,
+          "url": null,
+          "widget_source": "imweb/seongsu-1to1-personal-color-en-v1/"
+        },
+        "ja": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "zh-TW": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        },
+        "ko": {
+          "identifier": null,
+          "url": null,
+          "widget_source": null
+        }
+      }
     }
   ]
 }
