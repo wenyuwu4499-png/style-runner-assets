@@ -1,0 +1,15 @@
+{
+  "New Looks 男生穿搭": {
+    "opened": true,
+    "children": {
+      "image-look10": {
+        "type": "image",
+        "label": "Look 10｜男生穿搭照片"
+      },
+      "image-look11": {
+        "type": "image",
+        "label": "Look 11｜男生穿搭照片"
+      }
+    }
+  }
+}
