@@ -1,0 +1,48 @@
+(function(){if(!document.getElementById("sr-oy-styles")){var s=document.createElement("style");s.id="sr-oy-styles";s.textContent="#sr18 .s-oy{padding:38px 20px 42px;border-top:1px solid #f1dfd4;text-align:center;background:#fff}#sr18 .s-oy .s-heading h2{font-size:clamp(25px,4vw,49px);line-height:1.15}#sr18 .s-oy .s-heading h2 em{font-style:normal;color:#ff6428}#sr18 .s-oy .s-heading p{font-weight:600;color:#241b17}#sr18 .s-oy-desc{max-width:700px;margin:0 auto 24px!important;color:#6e6159;font-size:15px;line-height:1.85}#sr18 .s-oy-feature{margin:0 auto 28px!important;max-width:890px}#sr18 .s-oy img{display:block;width:100%;height:auto;object-fit:contain;border-radius:13px}#sr18 .s-oy-gallery{max-width:890px;margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}#sr18 .s-oy-gallery figure{margin:0!important}#sr18 .s-oy-gallery img{background:#fffaf7}";document.head.appendChild(s);}})();
+(function(){
+var root=document.getElementById("sr18");
+if(!root||root.getAttribute("data-init")==="yes")return;
+root.setAttribute("data-init","yes");
+var view=root.querySelector(".s-review-viewport"),grid=root.querySelector(".s-review-grid"),prev=root.querySelector(".s-prev"),next=root.querySelector(".s-next"),bar=root.querySelector(".s-progress i");
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var timer=null,resume=null,paused=false;
+function step(){var el=grid&&grid.querySelector(".s-review");if(!el)return 250;return el.getBoundingClientRect().width+(parseFloat(getComputedStyle(grid).columnGap)||0);}
+function progress(){if(!bar||!view)return;var max=Math.max(0,view.scrollWidth-view.clientWidth);bar.style.width=(max?15+85*view.scrollLeft/max:100)+"%";}
+function move(dir){if(!view)return;var max=Math.max(0,view.scrollWidth-view.clientWidth);if(max<4)return;var goal=view.scrollLeft+dir*step();if(goal>max-3)goal=0;if(goal<0)goal=max;view.scrollTo({left:goal,behavior:reduce?"auto":"smooth"});}
+function stop(){if(timer){clearInterval(timer);timer=null;}}
+function start(){stop();if(reduce||paused||document.hidden)return;timer=setInterval(function(){move(1);},5000);}
+function postpone(){stop();clearTimeout(resume);resume=setTimeout(start,9000);}
+if(prev&&next&&view){prev.addEventListener("click",function(){move(-1);postpone();});next.addEventListener("click",function(){move(1);postpone();});view.addEventListener("scroll",progress,{passive:true});view.addEventListener("pointerdown",postpone,{passive:true});view.addEventListener("focusin",function(){paused=true;stop();});view.addEventListener("focusout",function(){paused=false;start();});view.addEventListener("mouseenter",function(){paused=true;stop();});view.addEventListener("mouseleave",function(){paused=false;start();});document.addEventListener("visibilitychange",start);progress();start();}
+var items=root.querySelectorAll("[data-count]"),stats=root.querySelector(".s-stats");
+function animate(el){if(el.dataset.done)return;el.dataset.done="1";var n=Number(el.dataset.count),d=Number(el.dataset.decimals||0);if(reduce){el.textContent=n.toFixed(d);return;}var st=0;function tick(now){if(!st)st=now;var p=Math.min(1,(now-st)/1300);p=1-Math.pow(1-p,3);el.textContent=(n*p).toFixed(d);if(p<1)requestAnimationFrame(tick);}el.textContent=(0).toFixed(d);requestAnimationFrame(tick);}
+if(stats&&"IntersectionObserver" in window){var obs=new IntersectionObserver(function(e){if(e[0].isIntersecting){items.forEach(animate);obs.disconnect();}},{threshold:.25});obs.observe(stats);}else{items.forEach(animate);}
+})();
+(function(){var r=document.getElementById("sr18");if(r&&!r.querySelector(".s-lightbox"))r.insertAdjacentHTML("beforeend","<div class=s-lightbox hidden style=\"position:fixed;inset:0;z-index:200000;display:none;align-items:center;justify-content:center;background:rgba(24,18,17,.93);padding:18px\" role=\"dialog\" aria-modal=\"true\" aria-label=\"Review details\"><div class=s-lightbox-panel style=\"position:relative;width:min(760px,96vw);max-height:88vh;overflow:auto;background:#fff;padding:30px 20px;border-radius:14px\"><button class=s-lightbox-close type=\"button\" aria-label=\"Close\" style=\"position:absolute;right:8px;top:7px;border:0;background:#fff4eb;border-radius:50%;width:36px;height:36px;font-size:24px\">×</button><img class=s-lightbox-photo alt=\"Review photo\" style=\"display:none;max-width:100%;max-height:78vh;object-fit:contain;margin:auto\"><div class=s-lightbox-text style=\"display:none;padding:12px 4px\"><span style=\"color:#f5a126\">★★★★★</span><h3 class=s-lightbox-title style=\"font:700 24px Georgia,serif;margin:10px 0!important\"></h3><p class=s-lightbox-body style=\"font-size:15px;line-height:1.7;color:#70625b\"></p><small class=s-lightbox-meta style=\"color:#ff6428\"></small></div></div></div>");})();
+(function(){
+var root=document.getElementById("sr18");if(!root)return;
+var popup=root.querySelector(".s-lightbox"),photo=popup.querySelector(".s-lightbox-photo"),panel=popup.querySelector(".s-lightbox-text"),close=popup.querySelector(".s-lightbox-close"),previous=null;
+function open(){previous=document.activeElement;popup.hidden=false;popup.style.display="flex";close.focus();}
+function shut(){popup.style.display="none";popup.hidden=true;photo.style.display="none";panel.style.display="none";photo.removeAttribute("src");if(previous&&previous.focus)previous.focus();}
+close.addEventListener("click",shut);
+popup.addEventListener("click",function(e){if(e.target===popup)shut();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!popup.hidden)shut();});
+root.querySelectorAll(".s-review").forEach(function(card){
+var pictures=card.querySelectorAll(".s-photo"),text=card.querySelector(".s-review-body");
+pictures.forEach(function(button){
+var thumb=button.querySelector("img"),raw=thumb.getAttribute("src")||"";
+if(!raw||(raw.charCodeAt(0)===123&&raw.charCodeAt(1)===123)){button.hidden=true;return;}
+thumb.addEventListener("error",function(){button.hidden=true;});
+button.addEventListener("click",function(){
+panel.style.display="none";photo.style.display="block";
+photo.src=thumb.currentSrc||thumb.src;photo.alt=thumb.alt;open();
+});
+});
+card.querySelector(".s-review-read").addEventListener("click",function(){
+photo.style.display="none";panel.style.display="block";
+panel.querySelector(".s-lightbox-title").textContent=card.querySelector("h3").textContent;
+panel.querySelector(".s-lightbox-body").textContent=text.textContent.trim();
+panel.querySelector(".s-lightbox-meta").textContent=card.querySelector("small").textContent;
+open();
+});
+});
+})();
