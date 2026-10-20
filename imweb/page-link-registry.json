@@ -22,7 +22,7 @@
           "widget_source": "imweb/seongsu-basic-zh-tw-v1/"
         },
         "ko": {
-          "identifier": null,
+          "identifier": "KRSeongsu11-2H",
           "url": null,
           "widget_source": "imweb/seongsu-basic-ko-v1/"
         }
@@ -37,7 +37,7 @@
         "en": {
           "identifier": null,
           "url": null,
-          "widget_source": "imweb/seongsu-1to1-oliveyoung-en-v1/"
+          "widget_source": "imweb/seongsu-1to1-oliveyoung-en-v2/"
         },
         "ja": {
           "identifier": null,
