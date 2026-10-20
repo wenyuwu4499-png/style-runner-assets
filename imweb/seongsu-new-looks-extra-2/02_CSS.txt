@@ -1,0 +1,5 @@
+#sr-extra-looks-v1{display:grid;grid-template-columns:1fr;gap:18px;width:100%;max-width:100%;margin:0 auto}
+#sr-extra-looks-v1 figure{margin:0;border-radius:12px;overflow:hidden;background:#fff9f5}
+#sr-extra-looks-v1 img{display:block;width:100%;height:auto;object-fit:contain}
+#sr18 .s-look-list>.sr-extra-look{border-radius:12px;overflow:hidden;background:#fff9f5}
+@media(max-width:767px){#sr-extra-looks-v1{gap:18px}}
